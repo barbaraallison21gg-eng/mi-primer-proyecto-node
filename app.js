@@ -1,17 +1,18 @@
-// 1. Importar el módulo nativo http
-const http = require('http');
+// 1. Importar express
+const express = require('express');
 
-// 2. Crear el servidor utilizando una función callback
-const server = http.createServer((req, res) => {
+// 2. Crear la instancia
+const app = express();
 
-    // 3. Configurar la cabecera (Status 200 y tipo de contenido)
-    res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
+// 3. Definir el puerto
+const PORT = 3000;
 
-    // 4. Enviar el cuerpo de la respuesta y finalizar la comunicación
-    res.end('¡Hola Mundo!');
+// 4. Ruta principal
+app.get('/', (req, res) => {
+    res.send('¡Hola Mundo con Express! - Proyecto E2-M6');
 });
 
-// 5. Poner el servidor en escucha en el puerto 3000
-server.listen(3000, () => {
-    console.log('Servidor escuchando en http://localhost:3000');
+// 5. Iniciar el servidor
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });

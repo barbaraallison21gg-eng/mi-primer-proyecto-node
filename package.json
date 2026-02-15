@@ -1,0 +1,24 @@
+{
+  "name": "mi-primer-proyecto-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barbaraallison21gg-eng/mi-primer-proyecto-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/barbaraallison21gg-eng/mi-primer-proyecto-node/issues"
+  },
+  "homepage": "https://github.com/barbaraallison21gg-eng/mi-primer-proyecto-node#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
